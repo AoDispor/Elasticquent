@@ -626,7 +626,7 @@ trait ElasticquentTrait
             }
         }
 
-        if (isset($attributes['highlight'])) {
+        if (isset($hit['highlight'])) {
             $attributes['highlight'] = $hit['highlight'];    
         }
 
