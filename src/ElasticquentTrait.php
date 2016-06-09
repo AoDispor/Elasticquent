@@ -626,6 +626,8 @@ trait ElasticquentTrait
             }
         }
 
+        $attributes['highlight'] = $hit['highlight'];
+
         $instance->setRawAttributes((array)$attributes, true);
 
         // In addition to setting the attributes
